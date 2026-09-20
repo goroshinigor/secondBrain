@@ -1,0 +1,21 @@
+{
+  "name": "second-brain",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/var/www/html",
+  "remoteUser": "dev",
+  "remoteEnv": {
+    "DEEPSEEK_API_KEY": "${localEnv:DEEPSEEK_API_KEY}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "saoudrizwan.claude-dev",
+        "bmewburn.vscode-intelephense-client",
+        "Vue.volar",
+        "onecentlin.laravel-blade",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
